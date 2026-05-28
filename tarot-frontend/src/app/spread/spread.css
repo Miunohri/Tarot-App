@@ -1,0 +1,16 @@
+.spread-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.spread-card:hover {
+  transform: scale(1.02);
+}
+
+.spread-card.selected {
+  border: 2px solid purple;
+  background-color: rgba(128, 0, 128, 0.1);
+}

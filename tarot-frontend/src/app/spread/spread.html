@@ -11,4 +11,4 @@
     </div>
 </div>
 
-<button (click)="goToQuestion()">ask your question</button>
+<button (click)="goToQuestion()" [disabled]="!selectedSpread">ask your question</button>

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { TarotState } from '../tarot-state';
 
 @Component({
   selector: 'app-question',
@@ -11,9 +12,10 @@ import { Router } from '@angular/router';
 })
 export class Question {
 
-  constructor (private router: Router) {}
+  constructor (private router: Router, private state: TarotState) {}
 
   goToShuffle() {
+    this.state.question = this.question;
     this.router.navigate(['/shuffle'])
   }
 

@@ -2,6 +2,6 @@
 
 <p>try to keep your question open. try to avoid simple yes/no type questions</p>
 
-<input placeholder="type your question here" />
+<input [(ngModel)]="question" placeholder="type your question here" />
 
-<button (click)="goToShuffle()">next</button>
+<button (click)="goToShuffle()" [disabled]="!question.trim()">next</button>
