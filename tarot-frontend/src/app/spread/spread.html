@@ -1,0 +1,14 @@
+<h1>choose a spread:</h1>
+
+<div class="spread-grid">
+
+    <div *ngFor="let spread of spreads" (click)="selectSpread(spread.id)" [class.selected]="selectedSpread === spread.id" class="spread-card">
+        <h2>{{ spread.name }}</h2>
+        <p>{{ spread.intro }}</p>
+        <ol *ngIf="spread.points">
+            <li *ngFor="let point of spread.points">{{ point }}</li>
+        </ol>
+    </div>
+</div>
+
+<button (click)="goToQuestion()">ask your question</button>
