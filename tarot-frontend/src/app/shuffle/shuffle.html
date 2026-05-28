@@ -1,1 +1,11 @@
-<p>shuffle works!</p>
+<h1>shuffle the deck</h1>
+
+<p>your question: {{ state.question }}</p>
+
+<p>keep your question in mind as you shuffle. feel free to shuffle as many times as you want</p>
+
+<button (click)="shuffle()">shuffle</button>
+
+<p>when you're ready, you can cut the deck</p>
+
+<button (click)="cutDeck()">cut the deck</button>
