@@ -4,17 +4,17 @@
 
 <p>keep your question in mind as you shuffle. feel free to shuffle as many times as you want</p>
 
-<button (click)="shuffle()">shuffle</button>
+<button (click)="shuffle()" [disabled]="hasCut">shuffle</button>
 
 <p>when you're ready, you can cut the deck</p>
 
-<button (click)="cutDeck()">cut the deck</button>
+<button (click)="cutDeck()" [disabled]="!hasShuffled || hasCut">cut the deck</button>
 
 <p>after you've cut the deck, go ahead and draw your cards</p>
 
 <p *ngIf="state.cardsRemaining > 0">draw {{ state.cardsRemaining }} more card(s)</p>
 
-<button (click)="drawCards()" [disabled]="!state.selectedSpread">draw your cards</button>
+<button (click)="drawCards()" [disabled]="!state.selectedSpread || state.cardsRemaining <= 0">draw your cards</button>
 
 <p>once all cards for your spread are drawn, click on the next button to do your reading!</p>
 

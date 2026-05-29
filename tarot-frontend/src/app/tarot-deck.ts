@@ -106,6 +106,17 @@ export class TarotDeck {
   }
 
   drawCards(amount: number) {
-    return this.deck.splice(0, amount)
+    const drawn = [];
+
+    for (let i = 0; i < amount; i++) {
+      const card = this.deck.splice(0, 1)[0];
+
+      drawn.push({
+        ...card,
+        reversed: Math.random() < 0.5
+      });
+    }
+
+    return drawn;
   }
 }

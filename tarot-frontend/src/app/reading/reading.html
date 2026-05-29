@@ -1,1 +1,12 @@
-<p>reading works!</p>
+<h1>here's your reading:</h1>
+
+<h2>spread: {{ state.selectedSpread.name }}</h2>
+
+<div class="cards">
+
+    <div *ngFor="let card of state.drawnCards; let i = index">
+        <h3>card {{ i + 1 }}: {{ card.name }}</h3>
+        <p *ngIf="card.reversed">Reversed</p>
+        <p *ngIf="!card.reversed">Upright</p>
+    </div>
+</div>
