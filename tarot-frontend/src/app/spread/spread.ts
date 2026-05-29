@@ -78,6 +78,7 @@ export class Spread {
   selectSpread(spread: SpreadOption) {
     this.selectedSpread = spread;
     this.state.selectedSpread = spread;
+    this.state.cardCount = spread.cardCount;
   }
 
   goToQuestion() {

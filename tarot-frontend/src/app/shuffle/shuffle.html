@@ -18,4 +18,4 @@
 
 <p>once all cards for your spread are drawn, click on the next button to do your reading!</p>
 
-<button (click)="goToReading()" [disabled]="state.cardsRemaining !== 0">next</button>
+<button (click)="goToReading()" [disabled]="state.cardsRemaining > 0">next</button>

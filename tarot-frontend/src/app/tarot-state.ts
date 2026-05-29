@@ -9,6 +9,9 @@ export class TarotState {
   question: string = '';
   cardCount: number = 0;
 
+  drawnCards: any[] = [];
+  cardsRemaining: number = 0;
+
   constructor() {}
 
 }

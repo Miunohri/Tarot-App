@@ -104,4 +104,8 @@ export class TarotDeck {
       ...this.deck.slice(0, mid)
     ]
   }
+
+  drawCards(amount: number) {
+    return this.deck.splice(0, amount)
+  }
 }
