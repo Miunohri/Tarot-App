@@ -14,7 +14,7 @@
 
 <p *ngIf="state.cardsRemaining > 0">draw {{ state.cardsRemaining }} more card(s)</p>
 
-<button (click)="drawCards()" [disabled]="!state.selectedSpread || state.cardsRemaining <= 0">draw your cards</button>
+<button (click)="drawCards()" [disabled]="!state.selectedSpread || state.cardsRemaining <= 0 || !hasShuffled">draw your cards</button>
 
 <p>once all cards for your spread are drawn, click on the next button to do your reading!</p>
 
