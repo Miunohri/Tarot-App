@@ -2,7 +2,7 @@
 
 <div class="spread-grid">
 
-    <div *ngFor="let spread of spreads" (click)="selectSpread(spread.id)" [class.selected]="selectedSpread === spread.id" class="spread-card">
+    <div *ngFor="let spread of spreads" (click)="selectSpread(spread)" [class.selected]="selectedSpread === spread.id" class="spread-card">
         <h2>{{ spread.name }}</h2>
         <p>{{ spread.intro }}</p>
         <ol *ngIf="spread.points">

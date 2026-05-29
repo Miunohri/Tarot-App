@@ -5,8 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class TarotState {
 
-  selectedSpread: string | null = null;
+  selectedSpread: any = null;
   question: string = '';
+  cardCount: number = 0;
 
   constructor() {}
 
