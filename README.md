@@ -44,7 +44,6 @@ tarot-app/
 │ │  ├── reading/ # Display drawn cards and interpretations
 │ │  ├── tarot-deck/ # Tarot card data and deck logic
 │ │  └── tarot-state/ # Shared application state management
-│ │ 
 │ │
 │ └── package.json
 │
@@ -53,8 +52,6 @@ tarot-app/
 │ │ ├── main/
 │ │  ├── java/ # Controllers, services, and models
 │ │  
-│ │ 
-│ │
 │ └── pom.xml
 │
 └── README.md
