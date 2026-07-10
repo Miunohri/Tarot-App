@@ -31,31 +31,6 @@ An interactive tarot reading application built with Angular and TypeScript. User
 - Java
 - Spring Boot
 
-## Project Structure
-tarot-app/
-│
-├── tarot-frontend/ # Angular frontend application
-│ ├── src/
-│ │ ├── app/
-| |  ├── home/ # Home page
-│ │  ├── spread/ # Tarot spread selection
-│ │  ├── question/ # User question input
-│ │  ├── shuffle/ # Deck shuffling, cutting, and card drawing
-│ │  ├── reading/ # Display drawn cards and interpretations
-│ │  ├── tarot-deck/ # Tarot card data and deck logic
-│ │  └── tarot-state/ # Shared application state management
-│ │
-│ └── package.json
-│
-├── tarot-backend/ # Spring Boot backend application
-│ ├── src/
-│ │ ├── main/
-│ │  ├── java/ # Controllers, services, and models
-│ │  
-│ └── pom.xml
-│
-└── README.md
-
 ## How It Works
 1. The user selects a tarot spread.
 2. The user enters a question or intention.
